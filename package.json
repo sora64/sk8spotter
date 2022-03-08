@@ -1,5 +1,5 @@
 {
-  "name": "museum-paintings",
+  "name": "quartets-project",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,7 +9,7 @@
     "seed": "node seeds/index.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
