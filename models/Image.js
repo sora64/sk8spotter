@@ -17,7 +17,7 @@ Image.init(
     },
     url: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         isURL: true
       },
