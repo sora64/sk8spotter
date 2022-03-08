@@ -1,40 +1,36 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Image extends Model {}
+class Comment extends Model {}
 
-Image.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-    },
-    url: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      validate: {
-        isURL: true
+      references: {
+        model: 'user',
+        key: 'id',
       },
-    },
-    filename: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
     },
     skatepark_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'skatepark',
         key: 'id',
+      },
+    },
+    comment_text: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1],
       },
     },
   },
@@ -42,8 +38,8 @@ Image.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'image',
+    modelName: 'comment',
   }
 );
 
-module.exports = Image;
+module.exports = Comment;
