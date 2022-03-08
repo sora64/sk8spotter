@@ -1,6 +1,6 @@
-const { Gallery } = require('../models');
+const { Skatepark } = require('../models');
 
-const gallerydata = [
+const skateparkdata = [
   {
     name: 'Printemps',
     starting_date: 'April 20, 2021 07:00:00',
@@ -23,6 +23,6 @@ const gallerydata = [
   },
 ];
 
-const seedGallery = () => Gallery.bulkCreate(gallerydata);
+const seedGallery = () => Skatepark.bulkCreate(skateparkdata);
 
 module.exports = seedGallery;
