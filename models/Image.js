@@ -15,26 +15,21 @@ Image.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    artist: {
+    url: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    exhibition_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    filename: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      validate: {
+        isURL: true
+      },
     },
     description: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    gallery_id: {
+    skatepark_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'gallery',
+        model: 'skatepark',
         key: 'id',
       },
     },
@@ -43,7 +38,7 @@ Image.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'painting',
+    modelName: 'image',
   }
 );
 
