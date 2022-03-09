@@ -15,6 +15,10 @@ Skatepark.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   },
   {
     sequelize,
