@@ -15,13 +15,6 @@ Image.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    url: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      validate: {
-        isURL: true
-      },
-    },
     filename: {
       type: DataTypes.STRING,
       allowNull: true
