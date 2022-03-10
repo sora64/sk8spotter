@@ -15,20 +15,20 @@ Skatepark.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    starting_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
-    ending_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    }
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'gallery',
+    modelName: 'skatepark',
   }
 );
 
