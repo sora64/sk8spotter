@@ -1,8 +1,27 @@
-<section class="container">
-  <h3 class="skatepark-name">{{skatepark.name}}</h3>
-  <section class="flex-row justify-center">
-    {{#each skatepark.images as |image|}}
-    {{> image-details}}
+<section class="">
+  <h3 class="">{{skatepark.name}}</h3>
+  <section class="">
+    {{#each skatepark.pics as |pic|}}
+    {{> pic-details}}
     {{/each}}
   </section>
 </section>
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div class="">
+    <textarea class="" name="comment-body"></textarea>
+  </div>
+
+  <div class="">
+    <button class="" type="submit">add comment</button>
+  </div>
+  
+</form>
+{{/if}}
+
+{{> comments skatepark.comments}}
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}
