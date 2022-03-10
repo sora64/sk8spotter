@@ -46,8 +46,13 @@ const imagedata = [
   {
     title: "josh",
     skatepark_id: 3,
+<<<<<<< HEAD
+    filename: 'josh-laurel-skatepark.png',
+    description:''
+=======
     filename: "chris-28th.jpg",
     description: "Josh with a styled front feeble on the vert wall",
+>>>>>>> a5e2221698dde6c386b86d85575cbc3eb618f347
   },
   {
     title: "laurel-bowl",
