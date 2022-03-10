@@ -5,17 +5,17 @@ const skateparkdata = [
   {
     name: 'Texas Beach',
     location: 'Richmond, VA',
-    description: '',
+    description: 'DIY skatepark built by the skateboarders of Richmond VA',
   },
   {
     name: '28th',
     location: 'Richmond, VA',
-    description: '',
+    description: 'Street style skatepark composed of ledges and rails',
   },
   {
     name: 'Laurel',
     location: 'Henrico County, VA',
-    description: '',
+    description: 'Transitioned styled skatepark built in the 80s',
   },
 ];
 
