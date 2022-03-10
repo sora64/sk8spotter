@@ -46,7 +46,7 @@ const imagedata = [
   {
     title: 'josh',
     skatepark_id: 3,
-    filename: 'chris-28th.jpg',
+    filename: 'josh-laurel-skatepark.png',
     description:''
   },
   {

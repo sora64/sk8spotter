@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Skatepark,
-          attributes: ['name'],
+          attributes: ['name', 'description'],
         },
       ],
     });
@@ -29,9 +29,9 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET one gallery
-// Use the custom middleware before allowing the user to access the gallery
-router.get('/gallery/:id', withAuth, async (req, res) => {
+// GET one skatepark
+// Use the custom middleware before allowing the user to access the skatepark
+router.get('/skatepark/:id', withAuth, async (req, res) => {
   try {
     const dbSkateparkData = await Skatepark.findByPk(req.params.id, {
       include: [
@@ -40,7 +40,6 @@ router.get('/gallery/:id', withAuth, async (req, res) => {
           attributes: [
             'id',
             'title',
-            'url',
             'filename',
             'description',
           ],
@@ -49,7 +48,7 @@ router.get('/gallery/:id', withAuth, async (req, res) => {
     });
 
     const skatepark = dbSkateparkData.get({ plain: true });
-    res.render('gallery', { skatepark, loggedIn: req.session.loggedIn });
+    res.render('skatepark', { skatepark, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
