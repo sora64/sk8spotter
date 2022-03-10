@@ -9,8 +9,8 @@ router.get('/', async (req, res) => {
     const dbSkateparkData = await Skatepark.findAll({
       include: [
         {
-          model: Skatepark,
-          attributes: ['name', 'description'],
+          model: Image,
+          attributes: ['title', 'description'],
         },
       ],
     });
