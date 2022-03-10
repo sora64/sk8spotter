@@ -5,14 +5,17 @@ const skateparkdata = [
   {
     name: 'Texas Beach',
     location: 'Richmond, VA',
+    description: '',
   },
   {
     name: '28th',
     location: 'Richmond, VA',
+    description: '',
   },
   {
     name: 'Laurel',
-    lcation: 'Henrico County, VA',
+    location: 'Henrico County, VA',
+    description: '',
   },
 ];
 
