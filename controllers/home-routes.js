@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Skatepark, User, Pic } = require("../models");
+const { Skatepark, User, Pic, Comment } = require("../models");
 // Import the custom middleware
 const withAuth = require("../utils/auth");
 
@@ -9,23 +9,25 @@ router.get("/", async (req, res) => {
     const dbSkateparkData = await Skatepark.findAll({
       include: [
         {
+          model: Comment,
+          attributes: ['id', 'comment_text', 'skatepark_id', 'user_id', 'created_at'],
+          include: {
+            model: User,
+            attributes: ['username'],
+          },
+        },
+        {
           model: Pic,
           attributes: ["filename", "description"],
         },
-        // {
-        //   model: Comment,
-        //   attributes: ['id', 'comment_text', 'skatepark_id', 'user_id', 'created_at'],
-        //   include: {
-        //     model: User,
-        //     attributes: ['username'],
-        //   },
-        // },
       ],
     });
 
     const skateparks = dbSkateparkData.map((skatepark) =>
       skatepark.get({ plain: true })
     );
+
+    console.log(skateparks);
 
     res.render("homepage", {
       skateparks,
@@ -47,14 +49,14 @@ router.get("/skatepark/:id", withAuth, async (req, res) => {
           model: Pic,
           attributes: ["id", "title", "filename", "description"],
         },
-        // {
-        //   model: Comment,
-        //   attributes: ["id", "comment_text", "skatepark_id", "user_id"],
-        //   include: {
-        //     model: User,
-        //     attributes: ["username"],
-        //   },
-        // },
+        {
+          model: Comment,
+          attributes: ["id", "comment_text", "skatepark_id", "user_id", 'created_at'],
+          include: {
+            model: User,
+            attributes: ["username"],
+          },
+        },
       ],
     });
 

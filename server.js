@@ -22,7 +22,7 @@ const sess = {
     db: sequelize,
   }),
 };
-
+ 
 // Un-comment the following function and insert a new image's appropriate filename between the single quotes to resize that image.
 // resizing('<filename>');
 
