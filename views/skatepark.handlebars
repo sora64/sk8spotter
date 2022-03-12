@@ -9,7 +9,7 @@
 
 {{#if loggedIn}}
 <form class="comment-form">
-  <h4>Add a comment:</h4>
+  <h3>Add a comment:</h3>
   <div class="">
     <textarea class="" name="comment-body"></textarea>
   </div>
@@ -27,16 +27,13 @@
 
 {{#if loggedIn}}
 <form>
-  <h4>Add a pic:</h4>
   <input type="file" multiple
     class="filepond"
     name="filepond"
     accept="image/png, image/jpeg, image/gif, image/jpg" />
 </form>
-{{/if}}
-
 <h3>User pics:</h3>
-
+{{/if}}
 
 {{#if loggedIn}}
 <script src="/js/comment.js"></script>
