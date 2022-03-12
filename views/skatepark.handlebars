@@ -9,6 +9,7 @@
 
 {{#if loggedIn}}
 <form class="comment-form">
+  <h4>Add a comment:</h4>
   <div class="">
     <textarea class="" name="comment-body"></textarea>
   </div>
@@ -20,8 +21,59 @@
 </form>
 {{/if}}
 
+<h3>Comments: </h3>
+
 {{> comments skatepark.comments}}
 
 {{#if loggedIn}}
+<form>
+  <h4>Add a pic:</h4>
+  <input type="file" multiple
+    class="filepond"
+    name="filepond"
+    accept="image/png, image/jpeg, image/gif, image/jpg" />
+</form>
+{{/if}}
+
+<h3>User pics:</h3>
+
+
+{{#if loggedIn}}
 <script src="/js/comment.js"></script>
+
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+
+<script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+<script>
+  FilePond.registerPlugin(
+    FilePondPluginImagePreview,
+    FilePondPluginImageResize,
+    FilePondPluginImageTransform
+  );
+  // Get a reference to the file input element
+  const inputElement = document.querySelector('input[type="file"]');
+
+  // Create a FilePond instance
+  const pond = FilePond.create(inputElement, {
+    imageCropAspectRatio: 1,
+    imageResizeTargetWidth: 256,
+    onaddfile: (err, fileItem) => {
+      console.log(err, fileItem.getMetadata('resize'));
+    },
+
+    // add onpreparefile callback
+    onpreparefile: (fileItem, output) => {
+      // create a new image object
+      const img = new Image();
+
+      // set the image source to the output of the Image Transform plugin
+      img.src = URL.createObjectURL(output);
+
+      // add it to the DOM so we can see the result
+      document.body.appendChild(img);
+    }
+  });  
+</script>
 {{/if}}
