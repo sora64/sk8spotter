@@ -1,37 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sk8Spotter</title>
-  {{!-- <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css"> --}}
-</head>
+  <head>
+    <link
+      href="https://unpkg.com/filepond@^4/dist/filepond.css"
+      rel="stylesheet"
+    />
 
-<body>
-  <header>
-    <h1>Sk8Spotter!</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
+    <link
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Sk8Spotter!</h1>
+    </header>
+    <nav>
+      <a href="/">Home</a>
+      {{#if loggedIn}}
+        <button id="logout" class="">Logout</button>
+      {{else}}
+        <a href="/login">Login</a>
+      {{/if}}
+    </nav>
+    <main>
+      <aside>
+        <h2>Check out local skateparks!</h2>
+      </aside>
+      <div class="skatepark">
+        {{{body}}}
+      </div>
+    </main>
     {{#if loggedIn}}
-    <button id="logout" class="">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
+      <script src="/js/logout.js"></script>
     {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Check out local skateparks!</h2>
-    </aside>
-    <div class="skatepark">
-      {{{body}}}
-    </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+  </body>
 
 </html>
