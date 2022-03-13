@@ -1,5 +1,5 @@
 {
-  "name": "museum-paintings",
+  "name": "quartets-project",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,8 +8,18 @@
     "start": "node server.js",
     "seed": "node seeds/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sora64/quartets-project.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "bugs": {
+    "url": "https://github.com/sora64/quartets-project/issues"
+  },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
@@ -17,8 +27,10 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+    "foundation-sites": "^6.7.4",
     "handlebars": "^4.7.6",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "sharp": "^0.30.2"
   }
 }

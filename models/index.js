@@ -1,13 +1,31 @@
 const User = require('./User');
-const Gallery = require('./Gallery');
-const Painting = require('./Painting');
+const Skatepark = require('./Skatepark');
+const Pic = require('./Pic');
+const Comment = require('./Comment');
 
-Gallery.hasMany(Painting, {
-  foreignKey: 'gallery_id',
+// associations
+Skatepark.hasMany(Pic, {
+  foreignKey: 'skatepark_id',
 });
 
-Painting.belongsTo(Gallery, {
-  foreignKey: 'gallery_id',
+Pic.belongsTo(Skatepark, {
+  foreignKey: 'skatepark_id',
 });
 
-module.exports = { User, Gallery, Painting };
+Comment.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+Comment.belongsTo(Skatepark, {
+  foreignKey: 'skatepark_id',
+});
+
+User.hasMany(Comment, {
+  foreignKey: 'user_id',
+});
+
+Skatepark.hasMany(Comment, {
+  foreignKey: 'skatepark_id',
+});
+
+module.exports = { User, Skatepark, Pic, Comment };
