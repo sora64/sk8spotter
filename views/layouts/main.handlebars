@@ -1,41 +1,74 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> RVA.Sk8Spotter</title>
-  <!-- Compressed CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
-
-<!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-  
-</head>
 
 <body>
-  <header>
-    <h1>RVA.Sk8Spotter!</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
+   <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RVA.Sk8Spotter</title>
+    
+    <!-- Compressed CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous" 
+      rel="stylesheet" 
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/js/app.js" />
+    <link rel="stylesheet" href="/js/vendor/foundation.js" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/filepond@^4/dist/filepond.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <header>
+      <h1>RVA.Sk8Spotter!</h1>
+    </header>
+    <nav>
+      <a href="/">Home</a>
+      {{#if loggedIn}}
+        <button id="logout" class="">Logout</button>
+      {{else}}
+        <a href="/login">Login</a>
+      {{/if}}
+    </nav>
+    <main>
+      <aside>
+        <h2>Check out local skateparks!</h2>
+      </aside>
+      <div class="skatepark">
+        {{{body}}}
+      </div>
+    </main>
     {{#if loggedIn}}
-    <button id="logout" class="">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
+    <script src="/js/logout.js"></script>
     {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Check out local skateparks!</h2>
-    </aside>
-    <div class="skatepark">
-      {{{body}}}
-    </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+  </body>
 
 </html>
