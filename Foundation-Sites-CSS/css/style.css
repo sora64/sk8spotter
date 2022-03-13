@@ -1,3 +1,5 @@
+/* LOGIN PAGE STYLESHEET START */
+
 .header {
   display: flex;
   justify-content: center;
@@ -33,3 +35,6 @@
   color: white;
   text-shadow: 0.07em 0 black;
 }
+
+/* LOGIN PAGE STYLE SHEET END */
+
