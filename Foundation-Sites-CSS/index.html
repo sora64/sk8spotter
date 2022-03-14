@@ -5,20 +5,59 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>RVA Sk8Spotter</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="js/app.js">
+    <link rel="stylesheet" href="js/foundation.js">
   </head>
 <body>
 
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+          <h1>RVA Sk8Spotter</h1>
         </div>
       </div>
-
-      <div class="grid-x grid-padding-x">
+      <!--Picture Carousel-->
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <div class="orbit-wrapper">
+          <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          </div>
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="images/front-grind-texas-beach.jpg" alt="Space">
+                <figcaption class="orbit-caption">Texas Beach</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                <figcaption class="orbit-caption">28th</figcaption>
+              </figure>
+            </li>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                <figcaption class="orbit-caption">Laurel</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0">
+            <span class="show-for-sr">First slide details.</span>
+            <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+          </button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        </nav>
+      </div>
+      
+      <!-- <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
           <div class="callout">
             <h3>We&rsquo;re stoked you want to try Foundation! </h3>
@@ -47,7 +86,6 @@
       <div class="grid-x grid-padding-x">
         <div class="large-8 medium-8 cell">
           <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
 
           <div class="grid-x grid-padding-x">
             <div class="large-12 cell">
@@ -160,7 +198,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <script src="js/vendor/jquery.js"></script>

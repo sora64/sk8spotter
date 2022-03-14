@@ -30,6 +30,7 @@
     "foundation-sites": "^6.7.4",
     "handlebars": "^4.7.6",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "sharp": "^0.30.3"
   }
 }
