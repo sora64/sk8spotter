@@ -65,6 +65,7 @@ aside h2{
   font-size: 30px;
   padding-top: 15px;
   -webkit-text-stroke: 1px #949c64;
+
 }
 
 .wrapper {
@@ -90,6 +91,34 @@ aside h2{
   color: white;
   text-shadow: 0.07em 0 black;
 }
+
+.skatepark {
+  position: relative;
+  justify-content: center;
+}
+
+
+.card {
+    min-width: 700px;
+    min-height: 600px;
+    position: absolute;
+    top:20;
+  }
+
+  .card:nth-child(2) {
+    position: absolute;
+    min-height: 700px;
+    width: 700px;
+    left: 500px;
+  }
+
+  .card:nth-child(3) {
+    position: absolute;
+    min-height: 700px;
+    width: 500px;
+    left: 1000px;
+  }
+
 
 
 
