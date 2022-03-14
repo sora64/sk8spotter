@@ -41,60 +41,29 @@
 /* JUMBOTRON Begin */
 
 .section-title {
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.park img {
-  width: 35%;
-  float: left;
-}
-
-.park {
-  overflow: auto;
-  width: 900px;
-  margin: 0 auto 30px auto;
-  background-color: #f94327;
-  background-image: linear-gradient(316deg, #f94327 0%, #ff7d14 74%);
-  color: #d7bba5;
-}
-
-.skateparks {
-  text-align: center;
-}
-
-.skatepark-bio {
-  padding: 35px;
-  float: left;
-  width: 65%;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-/* BREAK BREAK BREAK BREAK BREAK */
-
-.section-title {
   font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .skaters {
   text-align: center;
 }
-.skater {
+.skater-1 {
   overflow: auto;
   width: 900px;
   margin: 0 auto 30px auto;
-  background: #024e76;
-  color: #fce138;
+  background-color: #f42b03;
+  background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  color: black;
+  border-radius: 1%;
+}
+
+.skater-2 {
+  overflow: auto;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background-color: #f42b03;
+  background-image: linear-gradient(316deg, #ffbe0b 0%, #f42b03 74%);
+  color: black;
 }
 .skater img {
   width: 35%;
