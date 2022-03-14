@@ -1,7 +1,10 @@
+/* LOGIN PAGE STYLESHEET START */
+
 .header {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #aaa;
+  /* background-image: linear-gradient(to bottom right, black, grey); */
   font-display: azure;
 }
 .header h1 {
@@ -33,4 +36,62 @@
   text-shadow: 0.07em 0 black;
 }
 
-/* HOMEPAGE STYLESHEET */
+/* LOGIN PAGE STYLE SHEET END */
+
+/* JUMBOTRON Begin */
+
+.section-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.skaters {
+  text-align: center;
+}
+.skater-1 {
+  overflow: auto;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background-color: #f5df2e;
+  background-image: linear-gradient(315deg, #f07654 0%, #f5df2e 74%);
+  color: black;
+  border: black solid 1px;
+}
+
+.skater-2 {
+  overflow: auto;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background-color: #f5df2e;
+  background-image: linear-gradient(315deg, #f5df2e 0%, #f07654 74%);
+  color: black;
+  border: black solid 1px;
+}
+.skater img {
+  width: 35%;
+  float: left;
+}
+.skater-bio {
+  padding: 35px;
+  float: left;
+  width: 65%;
+  
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.skater-bio h3 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.skater-bio h4 {
+  font-weight: lighter;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.skater-bio p {
+  font-size: 17px;
+  line-height: 1.3;
+}
