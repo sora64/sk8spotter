@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #aaa;
-  /* background-image: linear-gradient(to bottom right, black, grey); */
   font-display: azure;
 }
 .header h1 {
@@ -35,4 +34,3 @@
 }
 
 /* HOMEPAGE STYLESHEET */
-
