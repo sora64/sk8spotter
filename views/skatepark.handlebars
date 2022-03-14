@@ -1,10 +1,10 @@
-  <section id="photo-section" class="skaters">
-    <h2 class="section-title primary-border">{{skatepark.name}}</h2>
-    <section class="">
-      {{#each skatepark.pics as |pic|}}
-      {{> pic-details}}
-      {{/each}}
-    </section>
+<section id="photo-section" class="skaters">
+  <h2 class="section-title primary-border">{{skatepark.name}}</h2>
+  <section class="">
+    {{#each skatepark.pics as |pic|}}
+    {{> pic-details}}
+    {{/each}}
+  </section>
 </section>
 
 {{#if loggedIn}}
