@@ -15,11 +15,17 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   width: 100%;
   height: 600px;
   z-index: 0;
+}
+
+
+
+.my-video {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 .login-page {
@@ -36,11 +42,12 @@
   text-shadow: 0.07em 0 black;
 }
 
+
 /* LOGIN PAGE STYLE SHEET END */
 
 /* JUMBOTRON Begin */
 
-.section-title {
+/* .section-title {
   font-family: "Fira Sans Condensed", sans-serif;
 }
 
@@ -93,4 +100,4 @@
 .skater-bio p {
   font-size: 17px;
   line-height: 1.3;
-}
+} */
