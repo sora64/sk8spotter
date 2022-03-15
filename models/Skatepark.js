@@ -19,6 +19,14 @@ Skatepark.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    lat: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    lon: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     description: {
       type: DataTypes.TEXT,
       allowNull: false,

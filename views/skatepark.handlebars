@@ -1,27 +1,5 @@
-<section class="">
-  <h3 class="">{{skatepark.name}}</h3>
-  <div id="root">
-    <div class="App"> 
-      <h4>Rating: </h4>
-      <div class="star-rating">
-        <button type="button" class="on">
-          <span class="star">★</span>
-        </button>
-        <button type="button" class="off">
-          <span class="star">★</span>
-        </button>
-        <button type="button" class="off">
-          <span class="star">★</span>
-        </button>
-        <button type="button" class="off">
-          <span class="star">★</span>
-        </button>
-        <button type="button" class="off">
-          <span class="star">★</span>
-        </button>
-      </div>
-    </div>
-  </div>
+<section id="photo-section" class="skaters">
+  <h2 class="section-title primary-border">{{skatepark.name}}</h2>
   <section class="">
     {{#each skatepark.pics as |pic|}}
     {{> pic-details}}
@@ -37,7 +15,7 @@
   </div>
 
   <div class="">
-    <button class="" type="submit">add comment</button>
+    <button type="submit" class="button large">Add Comment</button>
   </div>
   
 </form>
