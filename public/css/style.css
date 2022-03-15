@@ -195,6 +195,26 @@ aside h2 {
   height: 600px;
 }
 
+/* Footer Styler */
 
+/* FOOTER Styler */
 
-/* LOGIN PAGE MEDIA QUERIES */
+.footer {
+  background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
+}
+
+.daily-grind {
+  display: flex;
+  justify-content: center;
+  color: #d7bba5;
+  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat",
+    "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  /* -webkit-text-stroke: 1px #030400; */
+  text-shadow: 0.07em 0 black;
+  padding-top: 1rem;
+  border-top: solid 1px black;
+}
+
+body {
+  background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
+}
