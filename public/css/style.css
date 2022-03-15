@@ -23,12 +23,12 @@ header {
 
 header h1 {
   color: #d7bba5;
-  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat",
+    "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
   font-size: 60px;
   -webkit-text-stroke: 2px #949c64;
   height: 50px;
   padding-top: 25px;
-
 }
 
 nav {
@@ -44,16 +44,16 @@ nav a {
 }
 
 aside {
-    background-image: url("https://burst.shopifycdn.com/photos/rusty-green-tin-graphitti-wall.jpg?width=925&format=pjpg&exif=1&iptc=1");
-    background-color: #cccccc;
-    height: 250px;
-    border: 3px solid black;
-  
+  background-image: url("https://burst.shopifycdn.com/photos/rusty-green-tin-graphitti-wall.jpg?width=925&format=pjpg&exif=1&iptc=1");
+  background-color: #cccccc;
+  height: 250px;
+  border: 3px solid black;
 }
 
-aside h2{
+aside h2 {
   color: #d7bba5;
-  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat",
+    "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
   -webkit-text-stroke: 2px black;
   display: flex;
   justify-content: center;
@@ -63,7 +63,8 @@ aside h2{
 
 .card header {
   color: #d7bba5;
-  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat",
+    "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
   font-size: 30px;
   padding-top: 15px;
   -webkit-text-stroke: 1px #949c64;
@@ -131,7 +132,6 @@ aside h2{
   padding: 35px;
   float: left;
   width: 65%;
-  
 }
 .text-left {
   text-align: left;
@@ -158,38 +158,44 @@ aside h2{
 }
 
 .card {
-    min-width: 550px;
-    max-height: 600px;
-    position: absolute;
-    top:20;
-    margin-left: 70px;
+  min-width: 550px;
+  max-height: 600px;
+  position: absolute;
+  top: 20;
+  margin-left: 70px;
+}
+
+.card:nth-child(2) {
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  left: 600px;
+  margin-left: 100px;
+}
+
+.card:nth-child(3) {
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  left: 1100px;
+  margin-left: 200px;
+}
+
+.card img {
+  width: 550px;
+  height: 600px;
+}
+
+/* LOGIN PAGE MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .wrapper {
+    background-color: #f07654;
+    z-index: 1000;
   }
+}
 
-  .card:nth-child(2) {
-    position: absolute;
-    width: 450px;
-    height: 600px;
-    left: 600px;
-    margin-left: 100px;
-    
-  }
-
-  .card:nth-child(3) {
-    position: absolute;
-    width: 450px;
-    height: 600px;
-    left: 1100px;
-    margin-left: 200px;
-  }
-
-  .card img {
-    width: 550px;
-    height: 600px;
-  }
-
-  /* LOGIN PAGE MEDIA QUERIES */
-
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (min-width: 800px) and (max-width: 1280px) {
   .header {
     display: flex;
     justify-content: space-evenly;
@@ -198,7 +204,7 @@ aside h2{
 
   .login {
     display: flex;
-    margin: 0 auto;
+    justify-items: center;
   }
 
   .wrapper {

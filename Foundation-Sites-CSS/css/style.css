@@ -44,7 +44,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 320px) and (max-width: 786px) {
+/* @media screen and (min-width: 320px) and (max-width: 786px) {
   .header {
     display: flex;
     justify-content: space-evenly;
@@ -60,4 +60,4 @@
     display: flex;
     margin: 0 auto;
   }
-}
+} */
