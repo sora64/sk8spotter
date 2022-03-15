@@ -15,7 +15,9 @@
 header {
   background-color: #d96f3e;
   display: flex;
+  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
   justify-content: center;
+  color: #ccc;
   border: 3px solid #d7bba5;
   height: 75px;
   border-radius: 3px;
@@ -28,7 +30,11 @@ header h1 {
   -webkit-text-stroke: 2px #949c64;
   height: 50px;
   padding-top: 25px;
+}
 
+header h2 {
+  font-family: Impact, "Franklin Gothic Bold", "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  -webkit-text-stroke: 2px #949c64;
 }
 
 nav {
@@ -185,4 +191,9 @@ aside h2{
   .card img {
     width: 550px;
     height: 600px;
+  }
+
+  .skateparkImg {
+    max-width: 50%;
+    max-height: fit-content;
   }
