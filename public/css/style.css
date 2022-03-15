@@ -186,3 +186,23 @@ aside h2{
     width: 550px;
     height: 600px;
   }
+
+  /* LOGIN PAGE MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .login {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+  }
+}

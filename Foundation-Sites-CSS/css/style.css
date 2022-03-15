@@ -20,8 +20,6 @@
   z-index: 0;
 }
 
-
-
 .my-video {
   display: flex;
   justify-content: center;
@@ -42,62 +40,24 @@
   text-shadow: 0.07em 0 black;
 }
 
+/* LOGIN MEDIA QUERIES */
 
-/* LOGIN PAGE STYLE SHEET END */
+/* MEDIA QUERIES */
 
-/* JUMBOTRON Begin */
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #aaa;
+  }
 
-/* .section-title {
-  font-family: "Fira Sans Condensed", sans-serif;
-}
+  .login {
+    display: flex;
+    margin: 0 auto;
+  }
 
-.skaters {
-  text-align: center;
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+  }
 }
-.skater-1 {
-  overflow: auto;
-  width: 900px;
-  margin: 0 auto 30px auto;
-  background-color: #f5df2e;
-  background-image: linear-gradient(315deg, #d96f3e 0%, #f5df2e 55%);
-  color: black;
-  border: black solid 1px;
-}
-
-.skater-2 {
-  overflow: auto;
-  width: 900px;
-  margin: 0 auto 30px auto;
-  background-color: #f5df2e;
-  background-image: linear-gradient(315deg, #f5df2e 0%, #d96f3e 55%);
-  color: black;
-  border: black solid 1px;
-}
-.skater img {
-  width: 35%;
-  float: left;
-}
-.skater-bio {
-  padding: 35px;
-  float: left;
-  width: 65%;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.skater-bio h3 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-.skater-bio h4 {
-  font-weight: lighter;
-  font-size: 26px;
-  margin-bottom: 25px;
-}
-.skater-bio p {
-  font-size: 17px;
-  line-height: 1.3;
-} */
