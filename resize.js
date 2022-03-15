@@ -14,8 +14,8 @@ const sharp = require("sharp");
 exports.resizing = async function resizeImage(filename) {
   try {
     await sharp(
-      `public/images/${filename}`)
-      .resize(1000, 522, {
+      `public/images/original_images/${filename}`)
+      .resize(300, 300, {
         fit: "inside",
       })
       .toFile(`public/images/process_images/resized-${filename}`);

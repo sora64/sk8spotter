@@ -1,3 +1,7 @@
-{{#each skateparks as |skatepark|}}
-{{> skatepark-details}}
-{{/each}}
+<div class="grid-container fluid">
+    <div class="grid-y grid-padding-y grid-margin-y align-center text-center">
+        {{#each skateparks as |skatepark|}}
+        {{> skatepark-details}}
+        {{/each}}
+    </div> 
+</div>

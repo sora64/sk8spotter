@@ -24,7 +24,22 @@ const sess = {
 };
  
 // Un-comment the following function and insert a new image's appropriate filename between the single quotes to resize that image.
-// resizing('<filename>');
+resizing('chris-28th.jpg');
+resizing('chris-smith-28th.jpg');
+resizing('dante-28th.jpg');
+resizing('deon-texas-beach.jpg');
+resizing('eli-texas-beach.jpg');
+resizing('front-grind-texas-beach.jpg');
+resizing('gavin-28th.jpg');
+resizing('josh-laurel-skatepark.png');
+resizing('laurel-bowl.jpg');
+resizing('nate-front-board-28th.png');
+resizing('Random.png');
+resizing('teak-whitewalls.JPG');
+resizing('texas-beach-footplant.png');
+resizing('turtle-laurel-bowl.png');
+resizing('turtle-vert-laurel.jpg');
+// resizing('<file-name>');
 
 
 app.use(session(sess));

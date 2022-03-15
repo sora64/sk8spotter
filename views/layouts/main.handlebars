@@ -41,6 +41,16 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.13.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.13.0/build/ol.js"></script>
+
   </head>
 
   <body>
@@ -56,9 +66,11 @@
       {{/if}}
     </nav>
     <main>
+      {{#if loggedIn}}
       <aside>
         <h2>Check out local skateparks!</h2>
       </aside>
+      {{/if}}
       <div class="skatepark">
         {{{body}}}
       </div>
