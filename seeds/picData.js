@@ -78,7 +78,7 @@ const picdata = [
   {
     title: "Turtle Werline vert",
     skatepark_id: 3,
-    filename: "resized-turtle-vert-laurel.png",
+    filename: "resized-turtle-vert-laurel.jpg",
     description: "Turtle styling out a speedcheck on the vert ramp",
   },
 ];
