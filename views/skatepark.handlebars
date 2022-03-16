@@ -10,7 +10,7 @@
 </section>
 
 {{#if loggedIn}}
-<form class="AddComment">
+<form id="comment-form" class="AddComment">
   <h3>Add a comment:</h3>
   <div class="box">
     <textarea name="comment-body"></textarea>
@@ -18,7 +18,6 @@
   <div class="comment">
     <button type="submit" class="button large">Add Comment</button>
   </div>
-
 </form>
 
 {{/if}}
