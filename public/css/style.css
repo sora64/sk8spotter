@@ -12,6 +12,10 @@
   text-decoration: underline;
 }
 
+body {
+  background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
+}
+
 header {
   background-color: #d96f3e;
   display: flex;
@@ -258,10 +262,6 @@ aside h2 {
   font-size: 1.5em;
 }
 
-.comment-text {
-  font-size: 1.5em;
-}
-
 /* FOOTER Styler */
 
 .footer {
@@ -281,10 +281,11 @@ aside h2 {
   border-top: solid 1px black;
 }
 
-body {
-  background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
-}
+/* Comment Section Styling */
 
+.comment-text {
+  font-size: 1em;
+}
 
 .AddComment {
   width:100%;
