@@ -285,6 +285,8 @@ aside h2 {
 
 .comment-text {
   font-size: 1em;
+  font-weight: lighter;
+  -webkit-text-stroke: 1px #676;
 }
 
 .AddComment {
