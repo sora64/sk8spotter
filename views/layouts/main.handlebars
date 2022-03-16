@@ -57,22 +57,22 @@
     <header>
       <h1>RVA.Sk8Spotter!</h1>
     </header>
-    <nav>
-      <div class="nav-controls">
-        <a href="/" class="flavor-text">Home</a>
-      {{#if loggedIn}}
-        <button id="logout" class="flavor-text">Logout</button>
-      {{else}}
-        <a href="/login" class="flavor-text">Login</a>
-      {{/if}}
-      </div>
-    </nav>
     <main>
       {{#if loggedIn}}
       <aside>
         <h2 class="text-center">Check out local skateparks!</h2>
       </aside>
       {{/if}}
+      <nav>
+        <div class="nav-controls">
+          <a href="/" class="flavor-text">Home</a>
+        {{#if loggedIn}}
+          <button id="logout" class="flavor-text">Logout</button>
+        {{else}}
+          <a href="/login" class="flavor-text">Login</a>
+        {{/if}}
+        </div>
+      </nav>
       <div class="skatepark">
         {{{body}}}
       </div>
