@@ -66,7 +66,7 @@ nav a {
 }
 
 #logout:hover {
-  color:	#0645AD;
+  color: #0645ad;
 }
 
 aside {
@@ -229,22 +229,20 @@ aside h2 {
 
 /* IMAGE PAGE */
 
-.image-page {
-  display: flex;
-  justify-content: center;
+.holder {
+  background-color: #d96f3e;
+  padding: 25px;
+}
+
+.image-container {
+  padding: 25px;
+  border: 5px solid #d7bba5;
+  border-radius: 15px;
   background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
 }
 
-.holder {
-  width: 250px;
-  border: 5px solid #d7bba5;
-  border-radius: 15px;
-  margin: 25px;
-}
-
-.skater-image-main {
-  min-width: 400px;
-  height: 400px;
+.image-text {
+  font-size: 1.5em;
 }
 
 /* FOOTER Styler */
