@@ -251,7 +251,7 @@ body {
     display: flex;
     flex-direction: column;
     color: black;
-    background-color: #f07654;
+    background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
   }
 
   #loginVideo {
