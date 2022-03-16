@@ -107,3 +107,21 @@ body {
     background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
   }
 }
+
+/* Media Querys for Skaters page */
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  #photo-section {
+    width: 0 70%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    flex: 0 100%;
+  }
+
+  .article {
+    flex: 1;
+  }
+}
