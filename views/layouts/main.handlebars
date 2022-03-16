@@ -68,13 +68,17 @@
     <main>
       {{#if loggedIn}}
       <aside>
-        <h2>Check out local skateparks!</h2>
+        <h2 class="text-center">Check out local skateparks!</h2>
       </aside>
       {{/if}}
       <div class="skatepark">
         {{{body}}}
       </div>
     </main>
+     <footer class="footer">
+        <h2 class="daily-grind">Find your next daily grind!</h2>
+    </footer>
+      <!--Footer End-->
     {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}}

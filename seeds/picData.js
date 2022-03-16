@@ -76,9 +76,9 @@ const picdata = [
     description: "Turtle has the best style for carving backside in the pool",
   },
   {
-    title: "Turtle Weline",
+    title: "Turtle Werline vert",
     skatepark_id: 3,
-    filename: "resized-turtle-laurel-bowl.png",
+    filename: "resized-turtle-vert-laurel.jpg",
     description: "Turtle styling out a speedcheck on the vert ramp",
   },
 ];
