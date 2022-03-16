@@ -8,20 +8,20 @@
 </section>
 
 {{#if loggedIn}}
-<form class="comment-form">
+<form class="AddComment">
   <h3>Add a comment:</h3>
-  <div class="">
-    <textarea class="" name="comment-body"></textarea>
+  <div class="box">
+    <textarea name="comment-body"></textarea>
   </div>
-
-  <div class="">
+  <div class="comment">
     <button type="submit" class="button large">Add Comment</button>
   </div>
-  
+
 </form>
+
 {{/if}}
 
-<h3>Comments: </h3>
+<h3 class="user-input">Comments: </h3>
 
 {{> comments skatepark.comments}}
 
@@ -32,7 +32,7 @@
     name="filepond"
     accept="image/png, image/jpeg, image/gif, image/jpg" />
 </form>
-<h3>User pics:</h3>
+<h3 class="user-input">User pics:</h3>
 {{/if}}
 
 {{#if loggedIn}}

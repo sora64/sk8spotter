@@ -218,3 +218,16 @@ aside h2 {
 body {
   background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
 }
+
+.AddComment {
+  width:100%;
+  height: 50px;
+  padding: 0px 100px 250px 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.user-input {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
