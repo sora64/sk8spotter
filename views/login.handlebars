@@ -1,79 +1,82 @@
 <!--Login Page Begin-->
 
 <!--Video Wrapper-->
-<div class="login">
-  <div class="wrapper">
-    <video src="/video/texas-loop.mp4" autoplay muted loop></video>
+<div class="grid-y grid-padding-y grid-margin-y align-center text-center">
+  <div class="login align-center text-center row align-middle">
+    <div class="wrapper">
+      {{!-- <div class="my-video"> --}}
+        <video id="loginVideo" src="/video/texas-loop.mp4" autoplay muted loop></video>
+      {{!-- </div> --}}
+      <!--Login Form Begin-->
 
-    <!--Login Form Begin-->
-
-    <div class="login-page">
-      <div class="login-card">
-        <!--New Members Signup Begin-->
-        <h2 class="page-title">New to Sk8Spotters?</h2>
-      </div>
-      <div class="login-card">
-        <form class="form signup-form">
-          <div class="form-group">
-            <input
-              class="form-input"
-              type="text"
-              id="username-signup"
-              placeholder="Username:"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              class="form-input"
-              type="text"
-              id="email-signup"
-              placeholder="Email address:"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              class="form-input"
-              type="password"
-              id="password-signup"
-              placeholder="Password:"
-            />
-          </div>
-          <div class="form-group">
-            <button class="btn button primary" type="submit">signup</button>
-          </div>
-        </form>
-        <!--New Member Signup End-->
-
-        <!--Frequent User Login Begin-->
-        <form class="form login-form">
-          <div class="old-user">
-            <div class="login-card">
-              <h2 class="page-title previous-login">Been here before?</h2>
-            </div>
+      <div class="login-page">
+        <div class="login-card">
+          <!--New Members Signup Begin-->
+          <h2 class="page-title">New to Sk8Spotters?</h2>
+        </div>
+        <div class="login-card">
+          <form class="form signup-form">
             <div class="form-group">
               <input
                 class="form-input"
                 type="text"
-                id="username-login"
+                id="username-signup"
                 placeholder="Username:"
               />
             </div>
             <div class="form-group">
               <input
                 class="form-input"
+                type="text"
+                id="email-signup"
+                placeholder="Email address:"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-input"
                 type="password"
-                id="password-login"
+                id="password-signup"
                 placeholder="Password:"
               />
             </div>
             <div class="form-group">
-              <button class="btn btn-login button primary" type="submit">
-                login
-              </button>
+              <button class="btn button primary" type="submit">signup</button>
             </div>
-            <!--Frequent User Login End-->
-          </div>
-        </form>
+          </form>
+          <!--New Member Signup End-->
+
+          <!--Frequent User Login Begin-->
+          <form class="form login-form">
+            <div class="old-user">
+              <div class="login-card">
+                <h2 class="page-title previous-login">Been here before?</h2>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-input"
+                  type="text"
+                  id="username-login"
+                  placeholder="Username:"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-input"
+                  type="password"
+                  id="password-login"
+                  placeholder="Password:"
+                />
+              </div>
+              <div class="form-group">
+                <button class="btn btn-login button primary" type="submit">
+                  login
+                </button>
+              </div>
+              <!--Frequent User Login End-->
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
