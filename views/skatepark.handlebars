@@ -1,8 +1,9 @@
 <section id="photo-section" class="skaters">
     <div class="grid-y grid-padding-y grid-margin-y align-center text-center">
       <header class="align-center text-center row align-middle">
-       <h2 class="section-title primary-border">{{skatepark.name}}</h2>
+        <h2 class="section-title primary-border">{{skatepark.name}}</h2>
       </header>
+      <h3 class="flavor-text">{{skatepark.description}}</h3>
       {{#each skatepark.pics as |pic|}}
       {{> pic-details}}
       {{/each}}
