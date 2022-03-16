@@ -58,12 +58,14 @@
       <h1>RVA.Sk8Spotter!</h1>
     </header>
     <nav>
-      <a href="/">Home</a>
+      <div class="nav-controls">
+        <a href="/" class="flavor-text">Home</a>
       {{#if loggedIn}}
-        <button id="logout" class="">Logout</button>
+        <button id="logout" class="flavor-text">Logout</button>
       {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class="flavor-text">Login</a>
       {{/if}}
+      </div>
     </nav>
     <main>
       {{#if loggedIn}}

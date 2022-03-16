@@ -48,7 +48,7 @@ header h2 {
 }
 
 nav {
-  background-color: #d96f3e;
+  background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
 }
 
 nav a {
@@ -57,6 +57,10 @@ nav a {
   text-decoration: underline;
   cursor: pointer;
   font-size: 25;
+}
+
+.nav-controls {
+  margin-left: 2em;
 }
 
 #logout {
