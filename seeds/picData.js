@@ -11,7 +11,7 @@ const picdata = [
     title: "Chris onore",
     skatepark_id: 2,
     filename: "resized-chris-smith-28th.jpg",
-    description: "styling out a super smoth frontside smith on the big rail",
+    description: "styling out a super smooth frontside smith on the big rail",
   },
   {
     title: "Dante Lowe",
