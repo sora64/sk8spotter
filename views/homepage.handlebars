@@ -1,8 +1,8 @@
-<header class="align-center text-center row align-middle">
-    <h3 class="flavor-text columns">Click on an image to visit a specific skatepark's page.</h3>
-</header>
 <div class="grid-container fluid">
     <div class="grid-y grid-padding-y grid-margin-y align-center text-center">
+        <header class="align-center text-center row align-middle">
+            <h3 class="flavor-text columns instructions">Click on an image to visit a specific skatepark's page.</h3>
+        </header>
         {{#each skateparks as |skatepark|}}
         {{> skatepark-details}}
         {{/each}}
