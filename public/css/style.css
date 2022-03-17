@@ -255,7 +255,7 @@ aside h2 {
   padding: 25px;
   border: 5px solid #d7bba5;
   border-radius: 15px;
-  background: linear-gradient(0.25turn, #949c64, #ebf8e1, #d96f3e);
+  background: linear-gradient(0.25turn, #d96f3e, #ebf8e1, #949c64);
 }
 
 .image-text {
