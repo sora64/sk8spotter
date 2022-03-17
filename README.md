@@ -10,6 +10,7 @@ The app will make finding local skateparks easier for skaters. Users can view sk
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Deployed-URL](#deployed-url)
+- [Presentation](#presentation)
 - [Screenshot](#screenshot)
 - [Questions](#questions)
 
@@ -28,6 +29,10 @@ If you have experience with making user-uploaded images persistent within a data
 ## Deployed-URL
 
 [Sk8Spotter](https://sk8spotter.herokuapp.com/)
+
+## Presentation
+
+[Group Presentation](https://docs.google.com/presentation/d/1uv4scTAi8Oml5EMxTa5S23W4cSyLlXdM1pmaNiIMrzM/edit?usp=sharing)
 
 ## Screenshot
 
