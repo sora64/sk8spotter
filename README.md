@@ -23,7 +23,7 @@ This app is a community hub for connecting skateboarders in the Richmond, VA are
 
 ## Contributing
 
-If you have experience with making user-uploaded images persistent within a database, please contact us if you would like to contribute!
+If you have experience with making user-uploaded images persistent within a database and would like to contribute, please contact us!
 
 ## Deployed-URL
 
